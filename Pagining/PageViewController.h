@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PageViewController.h
 //  Pagining
 //
 //  Created by Sam Meech-Ward on 2017-06-16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PageViewController : UIPageViewController
 
 @end
-
