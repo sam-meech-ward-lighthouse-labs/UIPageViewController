@@ -9,7 +9,7 @@
 #import "PageViewController.h"
 #import "SinglePageViewController.h"
 
-@interface PageViewController ()
+@interface PageViewController () <UIPageViewControllerDataSource>
 
 @end
 
@@ -24,11 +24,37 @@
     viewController.pageNumber = 1; // 2
     
     [self setViewControllers:@[viewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil]; // 3
+    
+    self.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Page View Controller
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
+    
+    int previousPageNumber = ((SinglePageViewController *)viewController).pageNumber; // 1
+    
+    SinglePageViewController *nextPageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"single-page-view-controller"]; // 2
+    
+    nextPageViewController.pageNumber = previousPageNumber+1; // 3
+    
+    return nextPageViewController; // 4
+}
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
+    
+    int previousPageNumber = ((SinglePageViewController *)viewController).pageNumber; // 1
+    
+    SinglePageViewController *nextPageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"single-page-view-controller"]; // 2
+    
+    nextPageViewController.pageNumber = previousPageNumber-1; // 3
+    
+    return nextPageViewController; // 4
 }
 
 /*
