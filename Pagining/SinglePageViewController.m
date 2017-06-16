@@ -20,6 +20,8 @@
     // Do any additional setup after loading the view.
     
     self.label.text = [NSString stringWithFormat:@"Page: %i", self.pageNumber];
+
+    self.view.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:206.0/255.0 blue:250.0/255.0 alpha:1.0];
 }
 
 - (void)didReceiveMemoryWarning {
