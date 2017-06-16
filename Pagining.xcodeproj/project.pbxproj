@@ -13,6 +13,7 @@
 		227DC9031EF44EA900DC6B1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227DC9021EF44EA900DC6B1A /* Assets.xcassets */; };
 		227DC9061EF44EA900DC6B1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227DC9041EF44EA900DC6B1A /* LaunchScreen.storyboard */; };
 		227DC90F1EF44F0100DC6B1A /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227DC90E1EF44F0100DC6B1A /* PageViewController.m */; };
+		227DC9121EF44F3C00DC6B1A /* SinglePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227DC9111EF44F3C00DC6B1A /* SinglePageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		227DC9071EF44EA900DC6B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		227DC90D1EF44F0100DC6B1A /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
 		227DC90E1EF44F0100DC6B1A /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		227DC9101EF44F3C00DC6B1A /* SinglePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinglePageViewController.h; sourceTree = "<group>"; };
+		227DC9111EF44F3C00DC6B1A /* SinglePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinglePageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				227DC8FA1EF44EA900DC6B1A /* AppDelegate.m */,
 				227DC90D1EF44F0100DC6B1A /* PageViewController.h */,
 				227DC90E1EF44F0100DC6B1A /* PageViewController.m */,
+				227DC9101EF44F3C00DC6B1A /* SinglePageViewController.h */,
+				227DC9111EF44F3C00DC6B1A /* SinglePageViewController.m */,
 				227DC8FF1EF44EA900DC6B1A /* Main.storyboard */,
 				227DC9021EF44EA900DC6B1A /* Assets.xcassets */,
 				227DC9041EF44EA900DC6B1A /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 				227DC8FB1EF44EA900DC6B1A /* AppDelegate.m in Sources */,
 				227DC8F81EF44EA900DC6B1A /* main.m in Sources */,
 				227DC90F1EF44F0100DC6B1A /* PageViewController.m in Sources */,
+				227DC9121EF44F3C00DC6B1A /* SinglePageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
