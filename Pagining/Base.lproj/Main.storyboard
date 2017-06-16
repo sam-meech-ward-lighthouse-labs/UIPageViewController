@@ -20,7 +20,7 @@
         <!--Single Page View Controller-->
         <scene sceneID="yTp-1a-6dx">
             <objects>
-                <viewController id="5XX-1m-pM2" customClass="SinglePageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="single-page-view-controller" id="5XX-1m-pM2" customClass="SinglePageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mbu-gZ-nRt"/>
                         <viewControllerLayoutGuide type="bottom" id="Xbu-gH-w0Z"/>

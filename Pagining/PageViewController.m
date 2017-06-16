@@ -7,6 +7,7 @@
 //
 
 #import "PageViewController.h"
+#import "SinglePageViewController.h"
 
 @interface PageViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    SinglePageViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"single-page-view-controller"]; // 1
+    
+    viewController.pageNumber = 1; // 2
+    
+    [self setViewControllers:@[viewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil]; // 3
 }
 
 - (void)didReceiveMemoryWarning {

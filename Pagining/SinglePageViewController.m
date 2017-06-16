@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.label.text = [NSString stringWithFormat:@"Page: %i", self.pageNumber];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -10,4 +10,6 @@
 
 @interface SinglePageViewController : UIViewController
 
+@property (nonatomic, assign) int pageNumber;
+
 @end
